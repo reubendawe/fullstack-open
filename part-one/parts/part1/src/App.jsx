@@ -1,13 +1,27 @@
 const App = () => {
-  const mates = [
-    { name: 'Harvey', age: 27 },
-    { name: 'Joseph', age: 26 },
-  ]
+  const course = 'Half Stack application development'
+  const part1 = 'Fundamentals of React'
+  const exercises1 = 10
+  const part2 = 'Using props to pass data'
+  const exercises2 = 7
+  const part3 = 'State of a component'
+  const exercises3 = 14
 
   return (
   <div>
-      <p>{mates[0].name} {mates[0].age}</p>
-      <p>{mates[1].name} {mates[1].age}</p>
+      <h1>{Course}</h1>
+      <p>
+        {part1} {exercises1}
+      </p>
+      <p>
+        {part2} {exercises2}
+      </p>
+      <p>
+        {part3} {exercises3}
+      </p>
+      <p>
+        Number of exercises {exercises1 + exercises2 + exercises3}
+      </p>
   </div>
   )
 }
