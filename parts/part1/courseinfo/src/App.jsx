@@ -7,34 +7,21 @@ const App = () => {
   const part3 = 'State of a component'
   const exercises3 = 14
 
-  const Header = (props) => {
-    return (
+  return (
     <div>
-        <Header name='Half stack application development' />
+      <h1>{course}</h1>
+      <p>
+        {part1} {exercises1}
+      </p>
+      <p>
+        {part2} {exercises2}
+      </p>
+      <p>
+        {part3} {exercises3}
+      </p>
+      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
     </div>
-    )
-  }
-
-  const Content = (props) => {
-    return (
-      <div>
-    <Content name='Fundamentals of React' />
-    <Content name='Using props to pass data' />
-    <Content name='State of a component' />
-    </div>
-    )
-  }
-
-  const Total = (props) => {
-    return (
-    <div>
-        <Total name={10} />
-        <Total name={7} />
-        <Total name={14} />
-    </div>
-    )
-  }
-
-
+  )
+}
 
 export default App
